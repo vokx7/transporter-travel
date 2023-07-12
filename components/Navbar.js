@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-// import Logo from "../assets/img/logopngwhite1a.png";
+import LogoNav from "../public/logo-nav.png";
 import {
   Navbar,
   MobileNav,
@@ -67,9 +67,7 @@ export default function Menu() {
         <section className="flex flex-col items-center">
           <div className="flex items-center justify-between max-w-screen-xl w-full">
             <Link href="/#">
-              <Typography className="font-bold text-dark-blue">
-                Transporter Travel
-              </Typography>
+              <Image src={LogoNav} alt="#" width={166} height={48} />
             </Link>
             <div className="flex items-center gap-4">
               <div className="mr-4 hidden lg:block">{navList}</div>

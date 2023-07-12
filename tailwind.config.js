@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,10 +15,10 @@ module.exports = {
         "light-blue": "#003F7D",
         "dark-blue": "#002347",
         "first-orange": "#FD7702",
-        "light-orange": "#FD7702",
+        "light-orange": "#FBB244",
         "dark-orange": "#FF5003",
       },
     },
   },
   plugins: [require("@tailwindcss/typography")],
-};
+});
