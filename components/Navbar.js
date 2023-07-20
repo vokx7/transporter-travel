@@ -9,6 +9,8 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import Link from "next/link";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 export default function Menu() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -57,6 +59,32 @@ export default function Menu() {
         >
           Kontakt
         </Link>
+      </Typography>
+      <Typography
+        as="li"
+        className="p-1 text-2xl hover:text-second-green flex justify-center"
+      >
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100057102714029&fref=ts"
+          className="flex items-center text-dark-blue hover:text-dark-orange "
+          onClick={() => setOpenNav(false)}
+        >
+          <BsFacebook />
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        className="p-1 text-2xl hover:text-second-green flex justify-center"
+      >
+        <a
+          target="_blank"
+          href="https://www.instagram.com/transporter_travel/"
+          className="flex items-center text-dark-blue hover:text-dark-orange "
+          onClick={() => setOpenNav(false)}
+        >
+          <BsInstagram />
+        </a>
       </Typography>
     </ul>
   );

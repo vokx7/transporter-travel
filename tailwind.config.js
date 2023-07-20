@@ -17,6 +17,11 @@ module.exports = withMT({
         "first-orange": "#FD7702",
         "light-orange": "#FBB244",
         "dark-orange": "#FF5003",
+        "bg-light": "#FFF9E8",
+        "bg-semilight": "#FFE0A2",
+      },
+      backgroundImage: {
+        "header-img": "url('../public/bg2.svg')",
       },
     },
   },
