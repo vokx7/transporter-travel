@@ -126,3 +126,17 @@
   height: 100%;
   object-fit: cover;
 }
+
+.box {
+  -webkit-box-shadow: 1px 21px 37px -22px rgba(253, 216, 154, 1);
+  -moz-box-shadow: 1px 21px 37px -22px rgba(253, 216, 154, 1);
+  box-shadow: 1px 21px 37px -22px rgba(253, 216, 154, 1);
+}
+
+.circle {
+  background: #fdd89a;
+  border-radius: 50%;
+
+  height: 5em;
+  width: 5em;
+}

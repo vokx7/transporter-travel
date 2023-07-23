@@ -1,7 +1,9 @@
-export default function Box() {
+export default function Box({ title, child }) {
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex flex-col md:flex-row max-w-7xl w-full p-10 md:p-0 md:py-14 items-center"></div>
+    <div className=" box flex flex-col items-center rounded-md p-10 max-w-[230px] max-h-[260px] gap-2">
+      <div className="circle flex items-center justify-center"> {child}</div>
+
+      <h6 className="text-light-blue font-semibold text-center">{title}</h6>
     </div>
   );
 }

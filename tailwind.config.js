@@ -19,9 +19,12 @@ module.exports = withMT({
         "dark-orange": "#FF5003",
         "bg-light": "#FFF9E8",
         "bg-semilight": "#FFE0A2",
+        "bg-second": "#fdd89a",
       },
       backgroundImage: {
         "header-img": "url('../public/bg2.svg')",
+        blob: "url('../public/blob.svg')",
+        wave: "url('../public/wave.svg')",
       },
     },
   },

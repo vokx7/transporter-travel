@@ -1,5 +1,7 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import LandingPage from "@/components/Landing";
+import Offer from "@/components/Offer";
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <div id="container" className="w-full">
         <LandingPage />
         <About />
+        <Offer />
+        <Contact />
       </div>
     </main>
   );

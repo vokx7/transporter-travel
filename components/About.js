@@ -7,8 +7,10 @@ import AboutBottom from "./AboutBottom";
 
 export default function About() {
   return (
-    <div id="about" className="flex flex-col items-center">
-      <div className="flex flex-col md:flex-row max-w-7xl w-full p-10 md:p-0 md:py-14 items-center gap-4">
+    <div id="about" className="relative flex flex-col items-center">
+      {" "}
+      <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-bg-second to-bg-light"></div>
+      <div className="relative z-10 flex flex-col md:flex-row max-w-7xl w-full p-10 md:p-0 md:py-14 items-center gap-4">
         <div className="flex-1 prose prose-base lg:prose-xl">
           {" "}
           <h2 className="text-first-blue leading-9 tracking-wide">
@@ -16,7 +18,11 @@ export default function About() {
             Jesteśmy biurem podróży zajmującym się kompleksową organizacją
             wyjazdów
           </h2>
-          <div className="not-prose flex flex-col md:flex-row gap-10 w-1/2">
+          <h4 className="text-light-blue tracking-wide pr-2">
+            Na naszych wycieczkach korzystamy <br /> z nowoczesnych zestawów
+            Tour Guide
+          </h4>
+          <div className="not-prose flex flex-row gap-10 w-1/2">
             <Image src={certyfikat} alt="#" className="flex-1 w-1/2" />
             <Image src={autokar} alt="#" className="flex-1 w-1/2" />
           </div>
@@ -24,8 +30,8 @@ export default function About() {
         <div className="flex-1">
           <CarouselMaterial />
         </div>
-        <AboutBottom />
       </div>
+      <AboutBottom />
     </div>
   );
 }
