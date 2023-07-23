@@ -23,14 +23,16 @@ export default function Offer() {
             klienta. Zadzwoń, a my zajmiemy się resztą! Zaproponujemy program
             wycieczki idealnie dobrany do specyfikacji grupy!
           </h5>
-          <Button
-            variant="filled"
-            size="lg"
-            color="orange"
-            className="bg-light-orange"
-          >
-            Katalog wycieczek
-          </Button>
+          <a target="_blank" href="../public/AKTUALNY_KATALOG_SZKOLY.pdf">
+            <Button
+              variant="filled"
+              size="lg"
+              color="orange"
+              className="bg-light-orange"
+            >
+              Katalog wycieczek
+            </Button>
+          </a>
         </div>
         <div className="flex-1 w-full flex justify-center">
           <Image src={adv2} alt="#" />

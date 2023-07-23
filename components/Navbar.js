@@ -4,9 +4,9 @@ import Image from "next/image";
 import LogoNav from "../public/logo-nav.png";
 import {
   Navbar,
-  MobileNav,
   Typography,
   IconButton,
+  Collapse,
 } from "@material-tailwind/react";
 import Link from "next/link";
 import { BsFacebook } from "react-icons/bs";
@@ -91,7 +91,7 @@ export default function Menu() {
 
   return (
     <>
-      <Navbar className="sticky inset-0 z-20 h-max max-w-full rounded-none py-2 px-4 lg:px-10 lg:py-4">
+      <Navbar className="sticky inset-0 z-50 max-w-full rounded-none py-2 px-4 lg:px-10 lg:py-4">
         <section className="flex flex-col items-center">
           <div className="flex items-center justify-between max-w-screen-xl w-full">
             <Link href="/#">
@@ -139,13 +139,8 @@ export default function Menu() {
             </div>
           </div>
         </section>
+        <Collapse open={openNav}>{navList}</Collapse>
       </Navbar>
-      <MobileNav
-        open={openNav}
-        className="sticky top-[2.7rem] z-10 bg-white shadow-md backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border border-white/80 px-8"
-      >
-        {navList}
-      </MobileNav>
     </>
   );
 }
