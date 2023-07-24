@@ -10,9 +10,9 @@ import biuro from "../public/biuro.jpeg";
 export default function Contact() {
   return (
     <div id="contact" className="flex flex-col items-center">
-      <div className="flex flex-col max-w-7xl w-full items-center gap-4 lg:gap-10 my-8 lg:mb-20">
+      <div className="relative z-10 flex flex-col max-w-7xl w-full items-center gap-4 lg:gap-10 my-8 lg:mb-20">
         <div className="flex flex-col md:flex-row items-center justify-center ">
-          <div className="flex-1 flex flex-col prose prose-base lg:prose-xl items-center bg-bg-light lg:bg-blob bg-no-repeat bg-contain bg-center lg:p-36">
+          <div className="flex-1 flex flex-col prose prose-base lg:prose-xl items-center lg:bg-blob bg-no-repeat bg-contain bg-center lg:p-36">
             <div>
               {" "}
               <div className="not-prose mb-4 font-semibold">
