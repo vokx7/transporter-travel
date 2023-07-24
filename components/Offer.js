@@ -2,7 +2,7 @@
 import Image from "next/image";
 // import bus from "../public/img2.jpg";
 // import adv from "../public/adventure.svg";
-import adv2 from "../public/adventure2.svg";
+import kadra from "../public/onas.jpeg";
 // import eif from "../public/eiffel.svg";
 import { Button, Typography } from "@material-tailwind/react";
 
@@ -12,8 +12,8 @@ import { Button, Typography } from "@material-tailwind/react";
 export default function Offer() {
   return (
     <div id="offer" className="flex flex-col items-center  ">
-      <div className=" flex flex-col max-w-7xl w-full md:flex-row items-center  gap-4 lg:gap-10 my-8 lg:mb-20">
-        <div className="mx-8 lg:mx-0 flex-1 prose prose-base lg:prose-xl bg-bg-light lg:bg-blob bg-no-repeat bg-cover bg-center lg:p-40 ">
+      <div className=" flex flex-col max-w-7xl w-full md:flex-row items-center  gap-4 lg:gap-14 my-8 lg:mb-20 ">
+        <div className=" flex-1 prose prose-base lg:prose-xl mx-8 lg:mx-0">
           <h2 className=" text-left text-first-blue leading-9 tracking-wider">
             Oferta
           </h2>
@@ -35,7 +35,7 @@ export default function Offer() {
           </a>
         </div>
         <div className="flex-1 w-full flex justify-center">
-          <Image src={adv2} alt="#" />
+          <Image src={kadra} alt="#" className="w-full rounded-md" />
         </div>
       </div>
     </div>

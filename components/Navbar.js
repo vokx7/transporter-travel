@@ -42,7 +42,7 @@ export default function Menu() {
           Oferta
         </Link>
       </Typography>
-      <Typography as="li" className="p-1 font-bold text-base tracking-wider">
+      {/* <Typography as="li" className="p-1 font-bold text-base tracking-wider">
         <Link
           href="/#reservations"
           className="flex items-center text-dark-blue hover:text-dark-orange hover-underline-animation"
@@ -50,7 +50,7 @@ export default function Menu() {
         >
           Rezerwacje
         </Link>
-      </Typography>
+      </Typography> */}
       <Typography as="li" className="p-1 font-bold text-base tracking-wider">
         <Link
           href="/#contact"
