@@ -64,12 +64,12 @@ export default function Footer() {
                 </Link>
                 &nbsp;|&nbsp;
               </li>
-              {/* <li>
+              <li>
                 <Link href="#" className="hover:text-dark-orange">
                   Rezerwacje
                 </Link>
                 &nbsp;|&nbsp;
-              </li> */}
+              </li>
               <li>
                 <Link href="#" className="hover:text-dark-orange">
                   Kontakt

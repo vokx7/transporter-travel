@@ -24,9 +24,17 @@ export default function About() {
             Tour Guide
           </h4>
           <div className="not-prose flex flex-row gap-10 w-1/2">
-            <Image src={certyfikat} alt="#" className="flex-1 w-1/2" />
-            <Image src={autokar} alt="#" className="flex-1 w-1/2" />
-            <Image src={logo3} alt="#" className="flex-1 w-1/2" />
+            <Image
+              src={certyfikat}
+              alt="#"
+              className="flex-1 w-1/2 flex-shrink-0"
+            />
+            <Image
+              src={autokar}
+              alt="#"
+              className="flex-1 w-1/2 flex-shrink-0"
+            />
+            <Image src={logo3} alt="#" className="flex-1 w-1/2 flex-shrink-0" />
           </div>
         </div>
         <div className="flex-1">
