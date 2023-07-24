@@ -23,7 +23,7 @@ export default function Offer() {
             klienta. Zadzwoń, a my zajmiemy się resztą! Zaproponujemy program
             wycieczki idealnie dobrany do specyfikacji grupy!
           </h5>
-          <a target="_blank" href="../public/AKTUALNY_KATALOG_SZKOLY.pdf">
+          <a target="_blank" href="/AKTUALNY_KATALOG_SZKOLY.pdf">
             <Button
               variant="filled"
               size="lg"
